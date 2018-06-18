@@ -18,6 +18,19 @@ beam::beam() : QObject(), QGraphicsRectItem()
 }
 
 void beam::move(){
+     //if beam collides w/ enemy: destroy both
+    QList<QGraphicsItem *> colliding_items = collidingItems();
+    for (int i = 0, n = colliding_items.size(); i < n; ++i) {
+        if (typeid(*(colliding_items[i])) == typeid(monster)) {
+            scene()->removeItem(colliding_items[i]);
+            scene()->removeItem(this);
+
+            delete colliding_items[i];
+            delete this;
+            return;
+        }
+    }
+   
     //move beam up
     setPos(x(),y() - 10);
    
