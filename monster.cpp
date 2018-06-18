@@ -4,6 +4,10 @@
 #include <stdlib.h>
 
 monster::monster() QObject(), QGraphicsRectItem(){
+     //set random position 
+    int random_number = rand() % 700; 
+    setPos(random_number,0);
+    
     //set size of monster as the size of the character
     setRect(0,0,100,100);
 
