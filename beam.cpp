@@ -1,11 +1,11 @@
 #include "beam.h"
 #include "monster.h"
-#include "score.h"
+#include "game.h"
 #include <QTimer>
 #include <QGraphicsScene>
 #include <QList>
 
-extern score * Score;
+extern Game * game;
 
 beam::beam() : QObject(), QGraphicsRectItem()
 {
@@ -25,6 +25,8 @@ void beam::move(){
     QList<QGraphicsItem *> colliding_items = collidingItems();
     for (int i = 0, n = colliding_items.size(); i < n; ++i) {
         if (typeid(*(colliding_items[i])) == typeid(monster)) {
+            //increase the score
+            game->score->increase();
             
            //increase the score
             Score->increase();
