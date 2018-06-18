@@ -31,6 +31,11 @@ Game::Game(QWidget *parent){
     // create the score
     score = new Score();
     scene->addItem(score);
+    
+    //create the health
+    health = new Health();
+    health->setPos(health->x(), health->y()+25);
+    scene->addItem(health);
 
     // spawn enemies
     QTimer * timer = new QTimer();
