@@ -3,14 +3,14 @@
 
 #include <QGraphicsTextItem>
 
-class score : public QGraphicsTextItem {
+class Score : public QGraphicsTextItem {
 public:
-    score(QGraphicsItem * parent = 0);
+    Score(QGraphicsItem * parent = 0);
     void increase();
     int getScore();
 
 public slots:
-    int scores;
+    int score;
 };
 
 
