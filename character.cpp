@@ -4,6 +4,11 @@
 #include "QGraphicsScene"
 #include <QKeyEvent>
 
+character::character(QGraphicsItem *parent): QObject(), QGraphicsPixmapItem(parent) {
+     //set graphic
+    setPixmap(QPixmap(":/images/Player.png"));
+}
+
 void character:: keyPressEvent(QKeyEvent *event){
     //left and right movement 
     if(event->key() == Qt::Key_Left){
