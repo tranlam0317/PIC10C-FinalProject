@@ -15,4 +15,6 @@ beam::beam()
 }
 
 void beam::move(){
+    //move beam up
+    setPos(x(),y() - 10);
 }
