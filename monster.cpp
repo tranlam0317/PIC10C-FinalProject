@@ -7,13 +7,13 @@
 
 extern Game * game; 
 
-monster::monster() QObject(), QGraphicsRectItem(){
+monster::monster(QGraphicsItem *parent) QObject(), QGraphicsPixmapItem(parent){
      //set random position 
     int random_number = rand() % 700; 
     setPos(random_number,0);
     
-    //set size of monster as the size of the character
-    setRect(0,0,100,100);
+    //draw the enemy
+    setPixmap(QPixmap(":/images/Monster.png"));
 
     //connect
     QTimer * timer = new QTimer();
