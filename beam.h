@@ -1,14 +1,15 @@
 #ifndef BEAM_H
 #define BEAM_H
 
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsItem>
 #include <QObject>
 
-class beam: public QObject, public QGraphicsRectItem{
+class beam: public QObject, public QGraphicsPixmapItem{
     Q_OBJECT
 
 public:
-    beam();
+    beam(QGraphicsItem * parent = 0);
 
 public slots:
     void move();
