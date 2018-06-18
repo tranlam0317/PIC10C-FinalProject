@@ -27,4 +27,5 @@ void character:: keyPressEvent(QKeyEvent *event){
 void character::spawn(){
     //create a monster 
     monster * Monster = new monster();
+    scene()->addItem(Monster);
 }
