@@ -27,6 +27,10 @@ Game::Game(QWidget *parent){
     player->setFocus();
     // add the player to the scene
     scene->addItem(player);
+    
+    // create the score
+    score = new Score();
+    scene->addItem(score);
 
     // spawn enemies
     QTimer * timer = new QTimer();
