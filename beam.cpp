@@ -7,10 +7,9 @@
 
 extern Game * game;
 
-beam::beam() : QObject(), QGraphicsRectItem()
-{
-   //set size of beam
-    setRect(0,0,10,50);
+beam::beam(QGraphicsItem *parent) : QObject(), QGraphicsPixmapItem(parent)
+{    //draw graphics
+    setPixmap(QPixmap(":/images/Laser beam.png"));
 
     //connect
     QTimer * timer = new QTimer();
