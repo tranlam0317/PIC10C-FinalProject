@@ -1,5 +1,6 @@
 #include "beam.h"
 #include <QTimer>
+#include <QGraphicsScene>
 
 beam::beam()
 {
