@@ -24,7 +24,7 @@ void monster::move(){
     setPos(x(),y() + 5);
 
     //delete beam if it does out of view
-    if(pos().y() + rect().height() < 0){
+    if(pos().y() > 600){
         scene()->removeItem(this);
         delete this;
     }
