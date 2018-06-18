@@ -31,5 +31,9 @@ int main(int argc, char *argv[])
 
     player->setPos(view->width()/2, view->height() - player->rect().height());
     
+    //spawn monsters 
+    QTimer * timer = new QTimer(); 
+    QObject:: connect(timer, SIGNAL(timeout()), player, SLOT(spawn()));
+    
     return a.exec();
 }
