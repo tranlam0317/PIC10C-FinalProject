@@ -1,14 +1,15 @@
 #ifndef MONSTER_H
 #define MONSTER_H
 
-#include <QGraphicsRectItem>
+#include <QGraphicsPixmapItem>
+#include <QGraphicsItem>
 #include <QObject>
 
-class monster: public QObject, public QGraphicsRectItem{
+class monster: public QObject, public QGraphicsPixmapItem{
   Q_OBJECT 
     
 public:
-  monster(); 
+  monster(QGraphicsItem * parent = 0); 
   
 public slots: 
   void move(); 
