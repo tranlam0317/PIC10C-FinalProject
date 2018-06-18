@@ -1,5 +1,6 @@
 #include "character.h"
 #include "beam.h"
+#include "monster.h"
 #include "QGraphicsScene"
 #include <QKeyEvent>
 
