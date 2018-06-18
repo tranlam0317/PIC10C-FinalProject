@@ -2,7 +2,14 @@
 
 Final project for PIC10C Using Qt creator to design a game with GUI.
 
-Game idea: simple snake game 
+Game idea: Roboot of Battlestar Galactac (but much simpler)
 
-Inspiration: Salazar's snake game 
-https://bitbucket.org/rikis-salazar/ncurses-snake/src
+Inspiration: Battlestar Galactac 
+
+Relevent PIC10C topics: 
+-Pointers 
+-Memory management 
+-QT Widgets 
+-Signals & slots 
+-Inheritance
+
