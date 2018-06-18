@@ -5,6 +5,8 @@
 #include <QList>
 #include "game.h"
 
+extern Game * game; 
+
 monster::monster() QObject(), QGraphicsRectItem(){
      //set random position 
     int random_number = rand() % 700; 
@@ -27,6 +29,9 @@ void monster::move(){
 
     //delete beam if it does out of view
     if(pos().y() > 600){
+        //decrease the health
+        game->health->decrease();
+
         scene()->removeItem(this);
         delete this;
     }
