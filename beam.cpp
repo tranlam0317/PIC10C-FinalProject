@@ -2,7 +2,7 @@
 #include <QTimer>
 #include <QGraphicsScene>
 
-beam::beam()
+beam::beam() : QObject(), QGraphicsRectItem()
 {
    //set size of beam
     setRect(0,0,10,50);
