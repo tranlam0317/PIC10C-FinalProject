@@ -6,10 +6,5 @@ Game idea: Roboot of Battlestar Galactac (but much simpler)
 
 Inspiration: Battlestar Galactac 
 
-Relevent PIC10C topics: 
--Pointers 
--Memory management 
--QT Widgets 
--Signals & slots 
--Inheritance
+Relevent PIC10C topics: pointers, memory management, QT Widgets, signals & slots, inheritance
 
