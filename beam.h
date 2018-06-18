@@ -14,5 +14,4 @@ public slots:
     void move();
 };
 
-
 #endif // BEAM_H
