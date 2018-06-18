@@ -2,6 +2,8 @@
 #include <QTimer>
 #include <QGraphicsScene>
 #include <stdlib.h>
+#include <QList>
+#include "game.h"
 
 monster::monster() QObject(), QGraphicsRectItem(){
      //set random position 
