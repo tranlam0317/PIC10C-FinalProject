@@ -14,6 +14,7 @@ public:
 
     QGraphicsScene * scene;
     character * player;
+    Score * score; 
 };
 
 
