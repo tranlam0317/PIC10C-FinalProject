@@ -2,10 +2,9 @@
 #include <QTimer>
 #include <QGraphicsScene>
 
-monster::monster()
-{
-    //set size of beam
-    setRect(0,0,10,50);
+monster::monster() QObject(), QGraphicsRectItem(){
+    //set size of monster as the size of the character
+    setRect(0,0,100,100);
 
     //connect
     QTimer * timer = new QTimer();
