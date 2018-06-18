@@ -1,6 +1,7 @@
 #include "monster.h"
 #include <QTimer>
 #include <QGraphicsScene>
+#include <stdlib.h>
 
 monster::monster() QObject(), QGraphicsRectItem(){
     //set size of monster as the size of the character
