@@ -3,6 +3,7 @@
 
 #include "character.h"
 #include "score.h"
+#include "health.h"
 #include <QWidget>
 #include <QGraphicsScene>
 #include <QGraphicsView>
@@ -14,7 +15,8 @@ public:
 
     QGraphicsScene * scene;
     character * player;
-    Score * score; 
+    Score * score;
+    Health * health;
 };
 
 
