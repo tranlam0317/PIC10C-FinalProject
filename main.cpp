@@ -34,6 +34,7 @@ int main(int argc, char *argv[])
     //spawn monsters 
     QTimer * timer = new QTimer(); 
     QObject:: connect(timer, SIGNAL(timeout()), player, SLOT(spawn()));
+    timer->start(3500);
     
     return a.exec();
 }
