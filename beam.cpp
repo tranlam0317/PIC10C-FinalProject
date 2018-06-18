@@ -1,6 +1,8 @@
 #include "beam.h"
+#include "monster.h"
 #include <QTimer>
 #include <QGraphicsScene>
+#include <QList>
 
 beam::beam() : QObject(), QGraphicsRectItem()
 {
