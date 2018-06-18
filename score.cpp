@@ -12,6 +12,7 @@ score::score(QGraphicsItem *parent):QGraphicsTextItem(parent) {
 
 void score::increase(){
     score++;
+    setPlainText(QString("Score ") + QString:: number(scores));
 }
 
 int score::getScore(){
