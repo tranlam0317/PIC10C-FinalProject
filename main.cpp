@@ -20,6 +20,10 @@ int main(int argc, char *argv[])
     //displaying player
     QGraphicsView * view = new QGraphicsView(scene);
 
+    //disabling scroll bars
+    view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+    view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
+
     view->show();
     return a.exec();
 }
