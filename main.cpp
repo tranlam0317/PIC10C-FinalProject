@@ -1,5 +1,6 @@
 #include <QApplication>
 #include "character.h"
+#include "score.h"
 #include <QGraphicsRectItem>
 #include <QGraphicsView>
 
@@ -35,6 +36,10 @@ int main(int argc, char *argv[])
     QTimer * timer = new QTimer(); 
     QObject:: connect(timer, SIGNAL(timeout()), player, SLOT(spawn()));
     timer->start(3500);
+    
+    //create a score
+    score * Score = new score();
+    scene ->addItem(Score);
     
     return a.exec();
 }
