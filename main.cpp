@@ -3,6 +3,9 @@
 #include "score.h"
 #include <QGraphicsRectItem>
 #include <QGraphicsView>
+#include <QTimer> 
+
+score * Score;
 
 int main(int argc, char *argv[])
 {
