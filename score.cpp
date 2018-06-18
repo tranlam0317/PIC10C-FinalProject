@@ -11,9 +11,9 @@ score::score(QGraphicsItem *parent):QGraphicsTextItem(parent) {
 }
 
 void score::increase(){
-    
+    score++;
 }
 
 int score::getScore(){
-    
+     return scores;
 }
