@@ -15,8 +15,8 @@ monster::monster() QObject(), QGraphicsRectItem(){
 }
 
 void monster::move(){
-    //move beam up
-    setPos(x(),y() - 10);
+    //move monster down
+    setPos(x(),y() + 5);
 
     //delete beam if it does out of view
     if(pos().y() + rect().height() < 0){
