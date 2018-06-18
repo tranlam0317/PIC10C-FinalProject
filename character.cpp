@@ -23,3 +23,8 @@ void character:: keyPressEvent(QKeyEvent *event){
         scene()->addItem(Beam);
     }
 }
+
+void character::spawn(){
+    //create a monster 
+    monster * Monster = new monster();
+}
