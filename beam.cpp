@@ -17,4 +17,10 @@ beam::beam()
 void beam::move(){
     //move beam up
     setPos(x(),y() - 10);
+   
+    //delete beam if it does out of view
+    if(pos().y() < 0){
+        scene()->removeItem(this);
+        delete this;
+    }
 }
