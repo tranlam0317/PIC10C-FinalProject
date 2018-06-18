@@ -24,6 +24,12 @@ int main(int argc, char *argv[])
     view->setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
     view->setVerticalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
 
+    //show the view
     view->show();
+    view->setFixedSize(800,600);
+    scene->setSceneRect(0,0,800,600);
+
+    player->setPos(view->width()/2, view->height() - player->rect().height());
+    
     return a.exec();
 }
