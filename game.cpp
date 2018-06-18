@@ -5,11 +5,14 @@
 #include <QGraphicsRectItem>
 #include <QGraphicsView>
 #include <QTimer>
+#include <QImage>
+#include <QBrush>
 
 Game::Game(QWidget *parent){
     // create the scene
     scene = new QGraphicsScene();
     scene->setSceneRect(0,0,800,600);
+    setBackgroundBrush(QBrush(QImage(":/images/Background.png")));
 
     setScene(scene);
     setHorizontalScrollBarPolicy(Qt::ScrollBarAlwaysOff);
