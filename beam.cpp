@@ -28,9 +28,6 @@ void beam::move(){
             //increase the score
             game->score->increase();
             
-           //increase the score
-            Score->increase();
-           
             scene()->removeItem(colliding_items[i]);
             scene()->removeItem(this);
 
@@ -48,4 +45,5 @@ void beam::move(){
         scene()->removeItem(this);
         delete this;
     }
+   
 }
